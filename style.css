@@ -1,0 +1,259 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: white;
+    font-family: 'Open Sans';
+    overflow-x: hidden;
+}
+
+#welcome-sec {
+    background-image: url(/images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 70px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    gap: 40px;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+header nav a:hover{
+    color: black;
+    font-weight: 18px;
+    text-shadow: 2px 2px 30px white;
+    transition: all 0.5s;
+}
+header img{
+    width: 150px;
+
+}
+section{
+    height: 100vh;
+   
+}
+.welcome-tex{
+   
+    width: 90vh;
+    margin: 300px auto;
+}
+.welcome-tex h1{
+    font-size: 80px;
+    text-align: center;
+}
+.welcome-tex p{
+    font-size: 24px;
+   max-width: 700px;
+    text-align: center;
+    margin: 100px auto;
+}
+/*Hakkında*/
+#about{
+    background-color: black;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-tex{
+    max-width: 600px;
+}
+.about-tex h1{
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 600;
+}
+.about-tex p{
+    margin-top:  50px;
+    font-family: 'popins';
+}
+#abaut img{
+    max-width: 600px;
+    max-height: 600px;
+
+}
+
+    /* battle alanı */
+
+    #battle{
+        background-image: radial-gradient(circle, rgba(0, 0, 0, 0.164) 0%, black 60%), url(/images/sec-2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .heading{
+        padding-top: 100px;
+
+    }
+    .heading h5{
+        font-size: 24px;
+        text-align: center;   
+    }
+    .heading h1{
+        text-align: center;
+        font-size: 70px;
+        font-weight: 500;
+    }
+    .boxes{
+        width: 620px;
+        height: 500px;
+     
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 300px;
+        height: 130px ;
+        border: 1px solid white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        font-family: 'open-sans';
+    }
+    .box h1{
+        color: crimson;
+    }
+    .box p{
+        font-size: 20px;
+    }
+    .box:last-child{
+        width: 600px;
+    }
+    
+    /*cardlar bölümü*/
+
+    #opinions{
+        width: 100%;
+        background-image: url(/images/sec-3.png);
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        padding: 100px;
+        justify-content: space-between;
+      
+
+    }
+    .opinions-tex{
+        max-width: 470px;
+        font-family: 'Poppins';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        padding: 20px;
+
+
+    }
+    .opinions-tex h1{
+        font-size: 80px;
+    }
+    .opinions-tex p{
+        font-size: 19px;
+    
+    }
+    .opinions-tex button{
+        padding: 15px;
+        background-color: red;
+        font-size: 600;
+        transition: color 0.4s, backgroun-color 0.4s;
+        border-radius: 5px;
+        width: 200px;
+        margin-top: 20px;
+        cursor: pointer;
+
+    }
+    .opinions-tex button:hover{
+        background-color: black;
+        color: red;
+        transition: all 0.5s;
+    }
+    .cards{
+        
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 50px;
+        justify-content: center;
+        margin-right: 50px;
+
+    }
+    .card{
+     background-color: rgb(56, 54, 54);
+        width: 450px;
+        border-radius: 10px;
+        font-family: 'poppins';
+        padding: 15px;
+
+
+    }
+    .card:nth-child(2){
+        align-self: flex-start;
+    }
+    .user{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 10px;
+
+        
+    }
+    .user-info h1{
+        color: crimson;
+    }
+    
+    .gray{
+        color: rgb(117, 108, 108);
+    }
+    @media(max-width: 1100px){
+        #about{
+           flex-direction: column;
+           gap: 50px;
+        }
+        .about-tex h1{
+            font-size: 40px;
+        }
+        .about-tex p{
+            margin-top: 20px;
+        }
+        #abaut img{
+            width: 350px;
+        }
+        #opinions{
+            flex-direction: column;
+            
+        }
+        .opinions-tex{
+            margin: 0 auto;
+          
+        }
+        .cards{
+            gap: 10px;
+            margin: 0 auto;
+
+        }
+        }
