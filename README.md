@@ -5,4 +5,4 @@ Zamanla projeler daha daha iyi olacak</p>
 
 <di>Bu proje HTML ve CSS kullanıldı</div>
 
-![](Ekran gifi.gif) 
+![](Ekrangif.gif) 
