@@ -147,7 +147,7 @@ section{
     /*cardlar bölümü*/
 
     #opinions{
-        width: 100%;
+        width: 102%;
         background-image: url(/images/sec-3.png);
         display: flex;
         background-size: cover;
